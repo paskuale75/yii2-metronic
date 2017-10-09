@@ -36,7 +36,7 @@ class Layout {
      */
     private static function _bodyOptions($options)
     {
-        Html::addCssClass($options, 'page-sidebar-closed-hide-logo');
+        Html::addCssClass($options, 'page-container-bg-solid page-sidebar-closed-hide-logo');
 
         if (Metronic::getComponent() && Metronic::STYLE_MATERIAL === Metronic::getComponent()->style)
         {
