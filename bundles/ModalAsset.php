@@ -18,7 +18,7 @@ class ModalAsset extends BaseAssetBundle
 
     public  $css = [
         'global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css',
-        //'global/plugins/bootstrap-modal/css/bootstrap-modal.css',
+        'global/plugins/bootstrap-modal/css/bootstrap-modal.css',
     ];
 
     public $depends = [
