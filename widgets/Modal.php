@@ -229,7 +229,7 @@ class Modal extends Widget {
             'class' => 'fade',
             'tabindex' => -1,
             ], $this->options);
-        //Html::addCssClass($this->options, 'modal');
+        Html::addCssClass($this->options, 'modal');
         if ($this->fullWidth)
         {
             Html::addCssClass($this->options, 'container');
