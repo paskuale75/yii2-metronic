@@ -228,7 +228,7 @@ class Modal extends Widget {
         $this->options = array_merge([
             'class' => 'fade',
             'tabindex' => -1,
-            ], $this->options);
+        ], $this->options);
         Html::addCssClass($this->options, 'modal');
         if ($this->fullWidth)
         {
@@ -249,14 +249,14 @@ class Modal extends Widget {
                 'data-dismiss' => 'modal',
                 'aria-hidden' => 'true',
                 'class' => 'close',
-                ], $this->closeButton);
+            ], $this->closeButton);
         }
 
         if (!empty($this->toggleButton))
         {
             $this->toggleButton = array_merge([
                 'options' => ['data-toggle' => 'modal'],
-                ], $this->toggleButton);
+            ], $this->toggleButton);
             if (!isset($this->toggleButton['options']['data-target']) && !isset($this->toggleButton['options']['href']))
             {
                 $this->toggleButton['options']['data-target'] = '#'.$this->options['id'];
