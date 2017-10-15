@@ -45,7 +45,10 @@ class Metronic extends \yii\base\Component
     /**
      * Theme
      */
-    const THEME_DARK = 'default';
+    const THEME_BLUE = 'blue';
+    const THEME_DEFAULT = 'default';
+    const THEME_DARK = 'dark';
+    const THEME_GREY = 'grey';
     const THEME_LIGHT = 'light';
 
     /**
