@@ -29,7 +29,7 @@ class Metronic extends \yii\base\Component
     /**
      * Assets link
      */
-    const ASSETS_LINK = __DIR__ . '/assets';
+    //const ASSETS_LINK = __DIR__ . '/assets';
 
     /**
      * Theme
