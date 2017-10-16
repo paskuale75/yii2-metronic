@@ -240,6 +240,8 @@ class Metronic extends \yii\base\Component
      */
     public function init()
     {
+        $assetLink = __DIR__.'/assets';
+
         if (self::SIDEBAR_FIXED === $this->sidebarOption && self::SIDEBAR_MENU_HOVER === $this->sidebarMenu) {
             throw new InvalidConfigException('Hover Sidebar Menu is not compatible with Fixed Sidebar Mode. Select Default Sidebar Mode Instead.');
         }
@@ -248,8 +250,8 @@ class Metronic extends \yii\base\Component
             throw new InvalidConfigException('You have to specify resources locations to be able to create symbolic links. Specify "admin" and "global" theme folder locations.');
         }
 
-        if (!is_link(self::ASSETS_LINK) && !is_dir(self::ASSETS_LINK)) {
-            symlink($this->resources, self::ASSETS_LINK);
+        if (!is_link($assetLink) && !is_dir($assetLink)) {
+            symlink($this->resources, $assetLink);
         }
     }
 
