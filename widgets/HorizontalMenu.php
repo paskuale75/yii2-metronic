@@ -186,7 +186,7 @@ class HorizontalMenu extends Menu {
                 $searchForm = $this->renderSearch();
         } 
         //$data[] = Html::tag('li', $this->renderSearch());
-        echo $searchForm . Html::tag($tag, implode("\n", $data), $options);
+        echo Html::tag($tag, implode("\n", $data), $options);
         //echo Html::endTag('div');
     }
 
