@@ -159,6 +159,8 @@ class HorizontalMenu extends Menu {
      */
     public function run()
     {
+        $searchForm = false;
+
         Html::addCssClass($this->options, 'nav navbar-nav');
         //echo Html::beginTag('div', ['class' => 'page-actions']);
         if ($this->route === null && Yii::$app->controller !== null)
@@ -181,10 +183,10 @@ class HorizontalMenu extends Menu {
         {
             // do not render seacrh box if not visible
             if ($this->search['visible'])
-                $data[] = Html::tag('li', $this->renderSearch());            
+                $searchForm = $this->renderSearch();
         } 
         //$data[] = Html::tag('li', $this->renderSearch());
-        echo Html::tag($tag, implode("\n", $data), $options);
+        echo $searchForm . Html::tag($tag, implode("\n", $data), $options);
         //echo Html::endTag('div');
     }
 
