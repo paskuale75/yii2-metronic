@@ -160,7 +160,7 @@ class HorizontalMenu extends Menu {
     public function run()
     {
         Html::addCssClass($this->options, 'nav navbar-nav');
-        echo Html::beginTag('div', ['class' => 'page-actions']);
+        //echo Html::beginTag('div', ['class' => 'page-actions']);
         if ($this->route === null && Yii::$app->controller !== null)
         {
             $this->route = Yii::$app->controller->getRoute();
@@ -185,7 +185,7 @@ class HorizontalMenu extends Menu {
         } 
         //$data[] = Html::tag('li', $this->renderSearch());
         echo Html::tag($tag, implode("\n", $data), $options);
-        echo Html::endTag('div');
+        //echo Html::endTag('div');
     }
 
     /**
