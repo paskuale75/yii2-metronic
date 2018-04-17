@@ -357,8 +357,8 @@ class HorizontalMenu extends Menu {
         $inputOptions = ArrayHelper::merge(ArrayHelper::getValue($this->search, 'input', []), $defaultInputOptions);
         ob_start();
         ob_implicit_flush(false);
-        echo Html::tag('span', '&nbsp;', ['class' => 'hor-menu-search-form-toggler']);
-        echo '<div class="search-form">';
+        //echo Html::tag('span', '&nbsp;', ['class' => 'hor-menu-search-form-toggler']);
+        //echo '<div class="search-form">';
         CoreActiveForm::begin($formOptions);
         echo '<div class="input-group">';
         echo Html::input('text', $inputOptions['name'], $inputOptions['value'], $inputOptions['options']);
@@ -366,7 +366,7 @@ class HorizontalMenu extends Menu {
         echo '<button type="button" class="btn"></button>';
         echo '</div>'; // end .input-group-btn
         echo '</div>'; // end .input-group
-        echo '</div>'; // end .search-form
+        //echo '</div>'; // end .search-form
         CoreActiveForm::end();
 
         return ob_get_clean();
