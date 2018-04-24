@@ -106,7 +106,7 @@ class ActiveForm extends \yii\widgets\ActiveForm {
                 {
                     Html::addCssClass($this->options, 'form-bordered');
                 }
-                Html::addCssClass($this->options, 'form-horizontal');
+                Html::addCssClass($this->options, 'horizontal-form');
                 $this->fieldConfig = ArrayHelper::merge([
                             'labelOptions' => ['class' => 'col-md-3 control-label'],
                             'template' => "{label}\n" . Html::tag('div', "{input}\n{error}\n{hint}", ['class' => 'col-md-9']),
