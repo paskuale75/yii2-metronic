@@ -14,8 +14,7 @@ class CoreAsset extends BaseAssetBundle {
      */
     public $depends = [
         'dlds\metronic\bundles\FontAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'yii\bootstrap4\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
     ];
 
     /**
